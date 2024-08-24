@@ -293,6 +293,7 @@ footer p {
     max-width: 500px; /* Tamanho máximo da imagem */
     height: 250px; /* Mantém a proporção da imagem */
     object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+    border-radius: 5%;
 }
 
 /* Estilo padrão para o texto dos contatos */
