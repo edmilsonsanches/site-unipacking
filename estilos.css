@@ -1,0 +1,229 @@
+/* estilos.css */
+
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #79b440;
+    padding-top: 80px; /* Adicione padding para evitar sobreposição do conteúdo com o cabeçalho fixo */
+}
+
+.color-custom-verde {
+    background-color: #79b440; /* Verde */
+}
+.color-custom-laranja {
+    background-color: #eb702c; /* Laranja */
+}
+
+
+/* Logo */
+.logo {
+    max-height: 70px;
+}
+
+/* Estilo do ícone de serviços */
+.icone-servicos {
+    width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    height:300px; /* Ajuste o tamanho da imagem conforme necessário */    
+    margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+/* Centralização do texto da descrição */
+.descricao {
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 0;    
+    font-size: 1.25rem;
+}
+
+/* Cor fonte contatos */
+.cor-contato {
+    color: #ff7f00;
+}
+
+
+/* Seção Hero */
+.hero {
+    background-color: #e9f5ec; /* Verde claro */
+    padding: 60px 0;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #79b440; /* Verde */
+}
+
+.hero h2 {
+    font-size: 4rem;
+    color: #79b440; /* Verde */
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #ff7f00; /* Laranja */    
+    text-align: center;
+}
+
+/* Seção de Contatos */
+.contatos h2 {
+    color: #ff7f00; /* laranja */    
+}
+
+.contatos a {
+    color: #79b440; /* Verde */
+    transition: color 0.3s;
+}
+
+.contatos a:hover {
+    color: #ff7f00; /* Laranja ao passar o mouse */
+}
+
+/* Footer */
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Seção star */
+.star {
+    background-color: #e9f5ec; /* Verde claro */
+    padding: 60px 0;
+}
+
+/* Linha abaixo do texto de descrição */
+.linha-separacao{
+    width: 100%; /* Ajuste a largura da linha conforme necessário */
+    height: 3px; /* Altura da linha */
+    background-color: #eb702c; /* Cor */
+    margin-top: 20px; /* Espaçamento acima da linha */
+    margin-bottom: 20px; /* Espaçamento abaixo da linha */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+/* Linha abaixo do texto de descrição */
+.linha-contato{
+    width: 80%; /* Ajuste a largura da linha conforme necessário */
+    height: 1px; /* Altura da linha */
+    background-color: #eb702c; /* Cor */
+    margin-top: 20px; /* Espaçamento acima da linha */
+    margin-bottom: 20px; /* Espaçamento abaixo da linha */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo do ícone circular com contorno */
+.icone-circular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Tamanho do círculo */
+    height: 50px; /* Tamanho do círculo */
+    border-radius: 50%; /* Forma circular */
+    border: 3px solid #eb702c; /* Cor do contorno do círculo */
+    color: #79b440; /* Cor do ícone */
+    font-size: 24px; /* Tamanho do ícone */
+    line-height: 60px; /* Centraliza verticalmente o ícone */
+    background-color: transparent; /* Remove o preenchimento do círculo */
+}
+
+.icone-circular i {
+    margin: 0; /* Remove margens internas do ícone */
+}
+
+
+/* Estilo do fundo do modal */
+.modal-content {
+    background-color: #f8f9fa; /* Cor de fundo do conteúdo do modal */
+    border: 1px solid #ff7f00; /* Cor da borda do modal */
+}
+
+/* Estilo do cabeçalho do modal */
+.modal-header {
+    background-color: #ff7f00; /* Cor de fundo do cabeçalho do modal */
+    color: white; /* Cor do texto no cabeçalho */
+}
+
+/* Estilo do botão de fechar no cabeçalho */
+.btn-close {
+    filter: invert(1); /* Altera a cor do ícone de fechar para branco */
+}
+
+/* Estilo do corpo do modal */
+.modal-body {
+    background-color: #ffffff; /* Cor de fundo do corpo do modal */
+    color: #79b440; /* Cor do texto no corpo */
+}
+
+/* Estilo do rodapé do modal */
+.modal-footer {
+    background-color: #f1f1f1; /* Cor de fundo do rodapé do modal */
+}
+
+/* Estilo dos links dentro do modal */
+.modal-body .btn-link {
+    color: #79b440; /* Cor dos links dentro do corpo do modal */
+}
+
+.modal-body .btn-link:hover {
+    color: #ff7f00; /* Cor dos links ao passar o mouse */
+}
+
+/* estilos.css */
+
+/* Estilo do botão de menu no cabeçalho */
+.btn-light {
+    background-color: #79b440; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão do botão */
+}
+
+/* Estilo do botão de menu ao passar o mouse */
+.btn-light:hover {
+    background-color: #79b440; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo do botão de fechar no modal */
+.btn-secondary {
+    background-color: #ff7f00; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Ajusta o padding do botão */
+    border-radius: 5px; /* Arredonda as bordas do botão */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo do botão de fechar ao passar o mouse */
+.btn-secondary:hover {
+    background-color: #ff7f00; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo do botão de fechar ao focar */
+.btn-secondary:focus {
+    box-shadow: 0 0 0 0.2rem rgb(121, 180, 64); /* Cor da sombra ao focar */
+}
+
+/* Estilo para a imagem do ícone de serviços */
+.icone-servicos {
+    width: 400px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para a seção de contatos */
+.contato-section {
+    padding: 50px 0; /* Adiciona espaço ao redor da seção */
+    background-color: #f8f9fa; /* Cor de fundo para destaque */
+}
+
+.contact-info h4 {
+    margin-bottom: 10px; /* Espaço abaixo dos títulos */
+}
+
+.contact-info p {
+    margin-bottom: 5px; /* Espaço abaixo dos parágrafos */
+}
+
+
