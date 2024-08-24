@@ -294,6 +294,7 @@ footer p {
     height: 250px; /* Mantém a proporção da imagem */
     object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
     border-radius: 5%;
+    border: 1.5px solid #eb702c; /* Define uma borda de 3px, sólida e verde */
 }
 
 /* Estilo padrão para o texto dos contatos */
