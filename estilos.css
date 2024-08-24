@@ -226,4 +226,45 @@ footer p {
     margin-bottom: 5px; /* Espaço abaixo dos parágrafos */
 }
 
+/* estilos.css */
 
+/* Contêiner da foto */
+.photo-container {
+    position: relative; /* Necessário para o posicionamento do overlay */
+    display: inline-block; /* Permite centralizar o contêiner */
+    width: 100%; /* Ajuste conforme necessário */
+    max-width: 400px; /* Define um tamanho máximo para a imagem */
+}
+
+/* Estilo da foto */
+.icone-servicos {
+    width: 100%; /* A imagem ocupará 100% do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo do overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com transparência */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Animação suave na transição */
+}
+
+/* Estilo do texto no overlay */
+.overlay-text {
+    color: #ffffff; /* Cor do texto */
+    font-size: 1.25rem; /* Tamanho da fonte */
+    text-align: center;
+}
+
+/* Mostrar o overlay ao passar o mouse */
+.photo-container:hover .overlay {
+    opacity: 1; /* Torna o overlay visível */
+}
