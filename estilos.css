@@ -1,96 +1,308 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tubetes</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="estilos.css">
-</head>
-<body>
-    <!-- Cabeçalho -->
-    <header class="color-custom-laranja text-white p-3 fixed-top">
-        <div class="container d-flex justify-content-between align-items-center">
-            <img src="imagens/logo_4.jpeg" alt="Logo da Empresa" class="logo">
-            <button type="button" class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                Menu
-            </button>
-        </div>
-    </header>
+/* estilos.css */
 
-    <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="btn btn-link">Home</a></li>
-                        <li><a href="sobre.html" class="btn btn-link">Sobre Nós</a></li>                    
-                        <li><a href="tubetes.html" class="btn btn-link">Tubetes</a></li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                </div>
-            </div>
-        </div>
-    </div>
-    </header>
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    color: #79b440;
+    padding-top: 80px; /* Adicione padding para evitar sobreposição do conteúdo com o cabeçalho fixo */
+}
 
-    <!-- Seção de Apresentação -->
-    <section class="hero text-center py-5">
-        <div class="container d-flex align-items-center justify-content-center mb-4">
-            <!-- Ícone Circular -->
-            <div class="icone-circular me-3">
-                <i class="fas fa-earth-americas"></i> <!-- Substitua o ícone conforme necessário -->
-            </div>
-            <!-- Título -->
-            <h2>Tubetes</h2>
-        </div>       
-        <!-- Linha Separação -->
-        <div class="linha-separacao"></div>
-    </section>
+.color-custom-verde {
+    background-color: #79b440; /* Verde */
+}
+.color-custom-laranja {
+    background-color: #eb702c; /* Laranja */
+}
 
-    <!-- Conteúdo Tubetes -->
-    <section class="my-5">
-        <div class="container text-center">
-            <!-- Contêiner para Imagem e Overlay -->
-            <div class="photo-container">
-                <img src="imagens/tubetes.webp" alt="Ícone de Serviços" class="icone-servicos mb-4 img-padronizada-response">
-                <div class="overlay">
-                    <div class="overlay-text">A nossa expertise é atender suas nescessidades.</div>
-                </div>
-            </div>
-    
-            <div class="d-flex flex-column align-items-center">
-                <p class="descricao">Parte fundamental de todo o processo de preservação ambiental e também de políticas públicas e privadas de sustentabilidade, a reciclagem de papelão tem aumentado cada dia mais.
 
-                    A reciclagem de papelão nos é essencial por diversos motivos, mas o principal é impedir que este material seja descartado na natureza incorretamente e provoque vários transtornos ambientais. 
-                    
-                    Fazemos a compra e a retirada dos tubetes usados de filme stretch direto da sua empresa.
-                    
-                    Basta entrar em contato conosco.</p>
-            </div>
-            
-            <!-- Linha Separação -->
-            <div class="linha-separacao"></div>
-        </div>
-    </section>
+/* Logo */
+.logo {
+    max-height: 70px;
+}
 
-    <!-- Rodapé -->
-    <footer class="color-custom-verde text-white text-center py-3">
-        <div class="container">
-            <p>&copy; 2024 Unipacking. Todos os direitos reservados.</p>
-        </div>
-    </footer>
+/* Estilo do ícone de serviços */
+.icone-servicos {
+    width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+    height:300px; /* Ajuste o tamanho da imagem conforme necessário */    
+    margin-bottom: 20px; /* Espaçamento entre a imagem e o texto */
+}
 
-<!-- Scripts do Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-</body>
-</html>
+/* Centralização do texto da descrição */
+.descricao {
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 0;    
+    font-size: 1.25rem;
+}
+
+/* Cor fonte contatos */
+.cor-contato {
+    color: #ff7f00;
+}
+
+
+/* Seção Hero */
+.hero {
+    background-color: #e9f5ec; /* Verde claro */
+    padding: 60px 0;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    color: #79b440; /* Verde */
+}
+
+.hero h2 {
+    font-size: 4rem;
+    color: #79b440; /* Verde */
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: #ff7f00; /* Laranja */    
+    text-align: center;
+}
+
+/* Seção de Contatos */
+.contatos h2 {
+    color: #ff7f00; /* laranja */    
+}
+
+.contatos a {
+    color: #79b440; /* Verde */
+    transition: color 0.3s;
+}
+
+.contatos a:hover {
+    color: #ff7f00; /* Laranja ao passar o mouse */
+}
+
+/* Footer */
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Seção star */
+.star {
+    background-color: #e9f5ec; /* Verde claro */
+    padding: 60px 0;
+}
+
+/* Linha abaixo do texto de descrição */
+.linha-separacao{
+    width: 100%; /* Ajuste a largura da linha conforme necessário */
+    height: 3px; /* Altura da linha */
+    background-color: #eb702c; /* Cor */
+    margin-top: 20px; /* Espaçamento acima da linha */
+    margin-bottom: 20px; /* Espaçamento abaixo da linha */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+/* Linha abaixo do texto de descrição */
+.linha-contato{
+    width: 80%; /* Ajuste a largura da linha conforme necessário */
+    height: 1px; /* Altura da linha */
+    background-color: #eb702c; /* Cor */
+    margin-top: 20px; /* Espaçamento acima da linha */
+    margin-bottom: 20px; /* Espaçamento abaixo da linha */
+    margin-left: auto;
+    margin-right: auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo do ícone circular com contorno */
+.icone-circular {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Tamanho do círculo */
+    height: 50px; /* Tamanho do círculo */
+    border-radius: 50%; /* Forma circular */
+    border: 3px solid #eb702c; /* Cor do contorno do círculo */
+    color: #79b440; /* Cor do ícone */
+    font-size: 24px; /* Tamanho do ícone */
+    line-height: 60px; /* Centraliza verticalmente o ícone */
+    background-color: transparent; /* Remove o preenchimento do círculo */
+}
+
+.icone-circular i {
+    margin: 0; /* Remove margens internas do ícone */
+}
+
+
+/* Estilo do fundo do modal */
+.modal-content {
+    background-color: #f8f9fa; /* Cor de fundo do conteúdo do modal */
+    border: 1px solid #ff7f00; /* Cor da borda do modal */
+}
+
+/* Estilo do cabeçalho do modal */
+.modal-header {
+    background-color: #ff7f00; /* Cor de fundo do cabeçalho do modal */
+    color: white; /* Cor do texto no cabeçalho */
+}
+
+/* Estilo do botão de fechar no cabeçalho */
+.btn-close {
+    filter: invert(1); /* Altera a cor do ícone de fechar para branco */
+}
+
+/* Estilo do corpo do modal */
+.modal-body {
+    background-color: #ffffff; /* Cor de fundo do corpo do modal */
+    color: #79b440; /* Cor do texto no corpo */
+}
+
+/* Estilo do rodapé do modal */
+.modal-footer {
+    background-color: #f1f1f1; /* Cor de fundo do rodapé do modal */
+}
+
+/* Estilo dos links dentro do modal */
+.modal-body .btn-link {
+    color: #79b440; /* Cor dos links dentro do corpo do modal */
+}
+
+.modal-body .btn-link:hover {
+    color: #ff7f00; /* Cor dos links ao passar o mouse */
+}
+
+/* estilos.css */
+
+/* Estilo do botão de menu no cabeçalho */
+.btn-light {
+    background-color: #79b440; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão do botão */
+}
+
+/* Estilo do botão de menu ao passar o mouse */
+.btn-light:hover {
+    background-color: #79b440; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo do botão de fechar no modal */
+.btn-secondary {
+    background-color: #ff7f00; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove a borda padrão */
+    padding: 10px 20px; /* Ajusta o padding do botão */
+    border-radius: 5px; /* Arredonda as bordas do botão */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo do botão de fechar ao passar o mouse */
+.btn-secondary:hover {
+    background-color: #ff7f00; /* Cor de fundo ao passar o mouse */
+    color: white; /* Cor do texto ao passar o mouse */
+}
+
+/* Estilo do botão de fechar ao focar */
+.btn-secondary:focus {
+    box-shadow: 0 0 0 0.2rem rgb(121, 180, 64); /* Cor da sombra ao focar */
+}
+
+/* Estilo para a imagem do ícone de serviços */
+.icone-servicos {
+    width: 400px; /* Largura da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo para a seção de contatos */
+.contato-section {
+    padding: 50px 0; /* Adiciona espaço ao redor da seção */
+    background-color: #f8f9fa; /* Cor de fundo para destaque */
+}
+
+.contact-info h4 {
+    margin-bottom: 10px; /* Espaço abaixo dos títulos */
+}
+
+.contact-info p {
+    margin-bottom: 5px; /* Espaço abaixo dos parágrafos */
+}
+
+/* estilos.css */
+
+/* Contêiner da foto */
+.photo-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    overflow: hidden; /* Oculta partes da imagem que ultrapassarem o contêiner */
+    border: 5px solid transparent; /* Borda inicial transparente */
+    transition: border-color 0.3s ease; /* Transição suave de cor da borda */
+}
+
+/* Efeito de borda ao passar o mouse */
+.photo-container:hover {
+    border-color: #79b440; /* Cor verde na borda */
+}
+
+/* Estilo da foto */
+.icone-servicos {
+    width: 100%; /* A imagem ocupará 100% do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+/* Estilo do overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com transparência */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Inicialmente invisível */
+    transition: opacity 0.3s ease; /* Animação suave na transição */
+}
+
+/* Estilo do texto no overlay */
+.overlay-text {
+    color: #ffffff; /* Cor do texto */
+    font-size: 1.25rem; /* Tamanho da fonte */
+    text-align: center;
+}
+
+/* Mostrar o overlay ao passar o mouse */
+.photo-container:hover .overlay {
+    opacity: 1; /* Torna o overlay visível */
+}
+
+/* Classe para padronizar o tamanho das imagens */
+.img-padronizada {
+    width: 500px; /* Largura fixa para todas as imagens */
+    height: 300px; /* Altura fixa para todas as imagens */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner sem distorcer */
+}
+
+/* Classe para padronizar o tamanho das imagens e manter a responsividade */
+.img-padronizada-response {
+    width: 100%; /* Ocupa 100% da largura do contêiner pai */
+    max-width: 500px; /* Tamanho máximo da imagem */
+    height: 250px; /* Mantém a proporção da imagem */
+    object-fit: cover; /* Ajusta a imagem para cobrir o contêiner */
+}
+
+/* Estilo padrão para o texto dos contatos */
+.contact-info p, .contact-info h4 {
+    color: #79b440; /* Cor padrão do texto */
+    transition: color 0.3s ease; /* Transição suave para a mudança de cor */
+}
+
+/* Mudança de cor ao passar o mouse */
+.contact-info p:hover, .contact-info h4:hover {
+    color: #eb702c; /* Cor verde ao passar o mouse */
+}
+
